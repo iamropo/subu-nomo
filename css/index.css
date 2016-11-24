@@ -42,7 +42,10 @@ ul#music-controls {
 
 ul#track-list > li {
 	height: 60px;
-	border-top: 1px solid;
+	border-left: 3px solid;
+	background-color: #d5d5d5;
+	margin-bottom: 5%;
+	padding-left: 5%;
 	display: flex;
 	align-items: center;
 }
@@ -66,10 +69,12 @@ div#bio-container {
 	display: none;
 }
 
-div#bio-container > div {
+img#profile-picture {
+	display: inline-block;
 	width: 100%;
 	height: 100px;
-	background-color: #000000;
+	border-top: 4px solid #ffffff;
+	background-color: #d5d5d5;
 }
 
 footer {
