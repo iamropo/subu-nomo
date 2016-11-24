@@ -1,15 +1,31 @@
 var music = document.querySelector('#music')
 var video = document.querySelector('#video')
+var bio = document.querySelector('#bio')
+
+var activeColor = ''
+var inactiveColor = ''
 
 var musicContainer = document.querySelector('#music-container')
 var videoContainer = document.querySelector('#video-container')
+var bioContainer = document.querySelector('#bio-container')
 
-function navigate (target, targetContainer, victimContainer) {
+function hide (victims, victimContainers) {
+	victims.forEach((victim) => {
+		victim.style.color = inactiveColor
+	})
+	victimContainers.forEach((container) => {
+		container.style.display = 'none'
+	})
+}
+
+function navigate (target, victims, targetContainer, victimContainers) {
 	target.addEventListener('click', () => {
-		victimContainer.style.display = 'none'
+		hide(victims, victimContainers)
+		target.style.color = activeColor
 		targetContainer.style.display = 'block'
 	})
 }
 
-navigate(music, musicContainer, videoContainer)
-navigate(video, videoContainer, musicContainer)
+navigate(music, [video, bio], musicContainer, [videoContainer, bioContainer])
+navigate(video, [music, bio], videoContainer, [musicContainer, bioContainer])
+navigate(bio, [video, music], bioContainer, [videoContainer, musicContainer])
