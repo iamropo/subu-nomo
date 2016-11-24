@@ -20,11 +20,16 @@ header {
 
 #description {
 	font-size: 1em;
+	font-weight: 500;
 	margin-bottom: 5%;
 }
 
 nav {
 	display: flex;
+}
+
+nav > div {
+	font-weight: 600;
 }
 
 nav > div:nth-child(2), nav > div:nth-child(3) {
@@ -81,6 +86,7 @@ img#profile-picture {
 }
 
 p#bio-description {
+	font-size: .9em;
 	line-height: 1.5;
 }
 
@@ -95,4 +101,13 @@ ul#links {
 	display: flex;
 	justify-content: space-around;
 	width: 60%;
+	font-size: 1.5em
+}
+
+div#copyright {
+	font-size: .8em;
+}
+
+div#developer {
+	font-size: .6em;
 }
