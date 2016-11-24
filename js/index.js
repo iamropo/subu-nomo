@@ -2,8 +2,8 @@ var music = document.querySelector('#music')
 var video = document.querySelector('#video')
 var bio = document.querySelector('#bio')
 
-var activeColor = ''
-var inactiveColor = ''
+var activeColor = '#e0e0e0'
+var inactiveColor = '#9e9e9e'
 
 var musicContainer = document.querySelector('#music-container')
 var videoContainer = document.querySelector('#video-container')
