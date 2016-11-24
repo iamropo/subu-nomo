@@ -4,6 +4,7 @@
 
 body {
 	padding: 5%;
+	font-family: 'Raleway';
 }
 
 a {
@@ -12,6 +13,8 @@ a {
 
 header {
 	font-size: 2.1em;
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
 	margin-top: 0;
 }
 
@@ -75,6 +78,10 @@ img#profile-picture {
 	height: 100px;
 	border-top: 4px solid #ffffff;
 	background-color: #d5d5d5;
+}
+
+p#bio-description {
+	line-height: 1.5;
 }
 
 footer {
