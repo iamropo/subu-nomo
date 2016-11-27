@@ -12,12 +12,14 @@ a {
 
 header {
 	font-size: 2.4em;
-	font-weight: 600;
-	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 800;
 	line-height: 1.5em;
-	text-align: 
 	color: #fafafa;
 	margin-top: 0;
+}
+
+header > span {
+	text-transform: uppercase;
 }
 
 #description {
