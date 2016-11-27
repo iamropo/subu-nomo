@@ -1,7 +1,7 @@
 body {
 	padding: 5%;
 	font-family: 'Raleway';
-	background-color: #263238;
+	background-color: #212121;
 	color: #e0e0e0;
 }
 
@@ -12,7 +12,7 @@ a {
 
 header {
 	font-size: 2.4em;
-	font-weight: 800;
+	font-weight: 900;
 	line-height: 1.5em;
 	color: #fafafa;
 	margin-top: 0;
@@ -61,17 +61,17 @@ ul#track-list > li {
 	align-items: center;
 }
 
-div#video-container {
+div#discography-container {
 	display: none;
 }
 
-div#video-container > ul > li {
+div#discography-container > ul > li {
 	margin-bottom: 5%;
 }
 
-ul.video-list li {
+ul#discography-list >  li > ul > li{
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	margin: 5% 0;
 	background-color: #d5d5d5;
 }
