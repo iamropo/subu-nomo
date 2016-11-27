@@ -1,19 +1,15 @@
 body {
 	padding: 5%;
-	font-family: 'Raleway';
-	background-color: #212121;
-	color: #e0e0e0;
-}
+/*	font-family: 'Raleway';
+*/}
 
 a {
 	text-decoration: none;
-	color: #e0e0e0;
 }
 
 header {
 	font-size: 2.4em;
 	font-weight: 900;
-	color: #fafafa;
 	text-transform: uppercase;
 	margin-bottom: 2%;
 }
