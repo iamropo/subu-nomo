@@ -15,9 +15,7 @@ header {
 	font-weight: 900;
 	color: #fafafa;
 	text-transform: uppercase;
-}
-
-header > span {
+	margin-bottom: 2%;
 }
 
 #description {
