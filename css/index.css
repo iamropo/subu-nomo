@@ -13,13 +13,11 @@ a {
 header {
 	font-size: 2.4em;
 	font-weight: 900;
-	line-height: 1.5em;
 	color: #fafafa;
-	margin-top: 0;
+	text-transform: uppercase;
 }
 
 header > span {
-	text-transform: uppercase;
 }
 
 #description {
