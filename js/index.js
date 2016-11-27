@@ -1,12 +1,12 @@
 var music = document.querySelector('#music')
-var video = document.querySelector('#video')
+var discography = document.querySelector('#discography')
 var bio = document.querySelector('#bio')
 
 var activeColor = '#e0e0e0'
 var inactiveColor = '#9e9e9e'
 
 var musicContainer = document.querySelector('#music-container')
-var videoContainer = document.querySelector('#video-container')
+var discographyContainer = document.querySelector('#discography-container')
 var bioContainer = document.querySelector('#bio-container')
 
 function hide (victims, victimContainers) {
@@ -26,6 +26,6 @@ function navigate (target, victims, targetContainer, victimContainers) {
 	})
 }
 
-navigate(music, [video, bio], musicContainer, [videoContainer, bioContainer])
-navigate(video, [music, bio], videoContainer, [musicContainer, bioContainer])
-navigate(bio, [video, music], bioContainer, [videoContainer, musicContainer])
+navigate(music, [discography, bio], musicContainer, [discographyContainer, bioContainer])
+navigate(discography, [music, bio], discographyContainer, [musicContainer, bioContainer])
+navigate(bio, [discography, music], bioContainer, [discographyContainer, musicContainer])
