@@ -10,6 +10,10 @@ a {
 	color: #e0e0e0;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 header {
 	font-size: 2.4em;
 	font-weight: 900;
@@ -30,6 +34,10 @@ nav {
 
 nav > div {
 	font-weight: 600;
+}
+
+nav > div:hover, ul#music-controls > li, ul#track-list > li {
+	cursor: pointer;
 }
 
 nav > div:nth-child(2), nav > div:nth-child(3) {
