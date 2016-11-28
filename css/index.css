@@ -1,6 +1,6 @@
 body {
 	padding: 5%;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	background-color: #212121;
 	color: #e0e0e0;
 }
@@ -17,9 +17,18 @@ a:hover {
 header {
 	font-size: 2.4em;
 	font-weight: 900;
-	color: #fafafa;
+	color: #fdfdfd;
 	text-transform: uppercase;
-	margin-bottom: 2%;
+}
+
+#tagline {
+	margin-bottom: 3%;
+	font-size: 1.1em;
+	font-weight: 200;
+}
+
+#trademark {
+	font-family: sans-serif;
 }
 
 #description {
@@ -34,6 +43,10 @@ nav {
 
 nav > div {
 	font-weight: 600;
+}
+
+nav > div#music {
+	border-bottom: 2px solid #e0e0e0;
 }
 
 nav > div:hover, ul#music-controls > li, ul#track-list > li {
@@ -138,9 +151,25 @@ ul#links {
 	font-size: 1.5em
 }
 
+/*.twitter {
+	color: #0084b4;
+}
+
+.youtube {
+	color: #cd201f;
+}
+
+.email {
+	color: #fcd986;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
 div#copyright {
 	font-size: .8em;
-}
+}*/
 
 div#developer {
 	font-size: .6em;

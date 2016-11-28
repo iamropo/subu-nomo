@@ -49,13 +49,13 @@
 		background-repeat: no-repeat;
 	}
 
-	header {
-		margin-bottom: 1%;
-	}
-
-	header, #description, nav, #base-container {
+	header, #tagline, #description, nav, #base-container {
 		width: 50%;
 		display: flex;
+	}
+
+	#tagline {
+		margin-bottom: 1%;
 	}
 
 	#description {
