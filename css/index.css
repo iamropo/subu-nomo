@@ -65,15 +65,38 @@ div#discography-container {
 	display: none;
 }
 
-div#discography-container > ul > li {
-	margin-bottom: 5%;
+ul#discography-list {
+	padding-top: 1%;
 }
 
-ul#discography-list >  li > ul > li{
+ul#discography-list > li {
 	width: 100%;
-	height: 80px;
-	margin: 5% 0;
-	background-color: #d5d5d5;
+	height: 60px;
+	margin-bottom: 5%;
+	display: flex;
+}
+
+ul#discography-list > li > div.album-art {
+	height: 100%;
+	width: 60px; /*square*/
+	background-color: #323232;
+}
+
+ul#discography-list >  li > ul.album-details {
+	height: 100%;
+	padding-left: 3%;
+}
+
+ul#discography-list >  li > ul.album-details > li.album-title {
+	font-size: .9em;
+}
+
+ul#discography-list >  li > ul.album-details > li.album-artist {
+	font-size: .9em;
+}
+
+ul#discography-list >  li > ul.album-details > li.album-year {
+	font-size: .8em;
 }
 
 div#bio-container {
