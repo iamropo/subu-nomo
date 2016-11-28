@@ -5,7 +5,6 @@ var pauseButton = document.getElementById('pause');
 var prevButton = document.getElementById('prev');
 var nextButton = document.getElementById('next');
 
-// For: Uncaught (in promise) DOMException: The play() request was interrupted by a new load request.
 const FIRST_TRACK = 1;
 
 function Status (musicTracks) {
