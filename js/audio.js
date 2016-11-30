@@ -10,6 +10,13 @@ const FIRST_TRACK = 1
 function Status (musicTracks) {
   var currentTrack = null // the index + 1
   var pausedTrack = null
+
+  function styleActiveParent (trackNumber) {
+  	 musicTracks[trackNumber - 1].parentElement.style.color = '#ffffff'
+     musicTracks[trackNumber - 1].parentElement.style.fontWeight = '500'
+     musicTracks[trackNumber - 1].parentElement.style.borderTop = '3px solid #ffffff'
+  }
+
   return {
     play: function (trackNumber) {
       currentTrack = trackNumber
@@ -17,9 +24,7 @@ function Status (musicTracks) {
       playButton.style.display = 'none'
       pauseButton.style.display = 'list-item'
       musicTracks[trackNumber - 1].play()
-      musicTracks[trackNumber - 1].parentElement.style.color = '#ffffff'
-      musicTracks[trackNumber - 1].parentElement.style.fontWeight = '500'
-      musicTracks[trackNumber - 1].parentElement.style.borderTop = '3px solid #ffffff'
+      styleActiveParent(trackNumber)
     },
     pause: function (trackNumber) {
       pausedTrack = trackNumber
@@ -34,6 +39,10 @@ function Status (musicTracks) {
     },
     paused: function () {
       return pausedTrack
+    },
+    /*resetting tracks*/
+    reset: function () {
+    	currentTrack = pausedTrack = null;
     }
  	}
 }
@@ -80,7 +89,8 @@ function nextTrack () {
     seekToBegining(victimTrackNumber)
     mediaPlayer.pause(victimTrackNumber)
     if (victimTrackNumber === musicTracks.length) {
-			// Don't play the first track
+			// Go back back to the first track (But don't play)
+			mediaPlayer.reset();
       return false
     } else {
       mediaPlayer.play(victimTrackNumber + 1)
@@ -97,8 +107,12 @@ Array.prototype.forEach.call(musicTracks, function (track, index) {
     }
     mediaPlayer.play(index + 1)
   })
-  track.addEventListener('ended', function () {
+  track.addEventListener('ended', function (index) {
     nextTrack()
+    if (index === musicTracks.length - 1) {
+    	playButton.style.display = 'list-item'
+      pauseButton.style.display = 'none'
+    }
   })
 })
 
