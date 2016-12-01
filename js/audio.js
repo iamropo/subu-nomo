@@ -67,7 +67,7 @@ function seekToBegining (trackNumber) {
   musicTracks[trackNumber - 1].currentTime = 0
   musicTracks[trackNumber - 1].parentElement.style.color = '#e0e0e0'
   musicTracks[trackNumber - 1].parentElement.style.fontWeight = 'normal'
-  musicTracks[trackNumber - 1].parentElement.style.borderTop = '2px solid #e0e0e0'
+  musicTracks[trackNumber - 1].parentElement.style.borderTop = '1px dotted #9e9e9e'
 }
 
 function previousTrack () {

@@ -77,7 +77,6 @@
 
 	ul#track-list > li {
 		width: 480px;
-		margin: auto 0 3% 0;
 	}
 
 	ul#discography-list {
@@ -133,7 +132,6 @@
 
 	ul#track-list > li {
 		width: 100%;
-		margin: auto 0 3% 0;
 	}
 
 	ul#links {
