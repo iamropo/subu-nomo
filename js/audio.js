@@ -48,8 +48,6 @@ function Status (musicTracks) {
     displayProgressBar: function (trackNumber) {
       var progressBar = musicTracks[trackNumber - 1].parentElement.parentElement
       progressBar.style.visibility = 'visible'
-      console.log(progressBar.style.visibilty)
-      console.log(1)
       progressBar.parentElement.style.border = 'none'
     },
     hideProgressBar: function (trackNumber) {
