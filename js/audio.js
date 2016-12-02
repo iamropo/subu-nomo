@@ -1,5 +1,6 @@
 var musicTracks = document.getElementsByTagName('audio')
 var progressBars = document.querySelectorAll('.progress-bar')
+var trackTitles = document.querySelectorAll('.title')
 
 // Interface
 var playButton = document.getElementById('play')
@@ -17,6 +18,7 @@ function Status (musicTracks) {
     var trackTitle = musicTracks[trackNumber - 1].parentElement.parentElement.parentElement.children[1]
     trackTitle.style.fontWeight = '600'
     trackTitle.style.color = '#ffffff'
+    mediaPlayer.displayProgressBar(trackNumber)
   }
 
   return {
@@ -154,5 +156,17 @@ Array.prototype.forEach.call(progressBars, function (progressBar) {
     progressBar.children[0].style.width = percent + '%'
     var audio = progressBar.children[0].children[0]
     audio.currentTime = (audio.duration * percent) / 100
+  })
+})
+
+Array.prototype.forEach.call(trackTitles, function (title, index) {
+  title.addEventListener('click', function () {
+    var victimTrackNumber = mediaPlayer.playing() || mediaPlayer.paused()
+    if (victimTrackNumber !== null) {
+      seekToBegining(victimTrackNumber)
+      mediaPlayer.pause(victimTrackNumber)
+      mediaPlayer.hideProgressBar(victimTrackNumber)
+    }
+    mediaPlayer.play(index + 1)
   })
 })
