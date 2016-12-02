@@ -2,7 +2,7 @@ var music = document.querySelector('#music')
 var discography = document.querySelector('#discography')
 var bio = document.querySelector('#bio')
 
-var activeColor = '#e0e0e0'
+var activeColor = '#efefef'
 var inactiveColor = '#9e9e9e'
 
 var musicContainer = document.querySelector('#music-container')
