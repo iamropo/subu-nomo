@@ -14,8 +14,9 @@ function Status (musicTracks) {
   var pausedTrack = null
 
   function styleActiveParent (trackNumber) {
-  	 musicTracks[trackNumber - 1].parentElement.style.color = '#ffffff'
-     musicTracks[trackNumber - 1].parentElement.style.fontWeight = '500'
+    var trackTitle = musicTracks[trackNumber - 1].parentElement.parentElement.parentElement.children[1]
+    trackTitle.style.fontWeight = '600'
+    trackTitle.style.color = '#ffffff'
   }
 
   return {
@@ -78,7 +79,7 @@ function pause () {
 function seekToBegining (trackNumber) {
   musicTracks[trackNumber - 1].currentTime = 0
   musicTracks[trackNumber - 1].parentElement.style.color = '#e0e0e0'
-  musicTracks[trackNumber - 1].parentElement.style.fontWeight = 'bolder'
+  musicTracks[trackNumber - 1].parentElement.parentElement.parentElement.children[1].style.fontWeight = 'normal'
 }
 
 function previousTrack () {
