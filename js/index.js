@@ -23,7 +23,7 @@ function navigate (target, victims, targetContainer, victimContainers) {
 	target.addEventListener('click', () => {
 		hide(victims, victimContainers)
 		target.style.color = activeColor
-		target.style.borderBottom = '2px solid ' + activeColor
+		target.style.borderBottom = '3px solid ' + activeColor
 		targetContainer.style.display = 'block'
 	})
 }
